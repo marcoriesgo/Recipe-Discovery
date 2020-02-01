@@ -46,7 +46,7 @@ A recipe finder that uses a foods API to generate the different meals based on a
 
 * Each rcipe displayed gives users a link to the recipe. 
 
-## Stretched Functionality:
+## More Potential Functionality:
 
 * User can see the recipe's calories, nutrition facts, and rating.
 
@@ -54,5 +54,5 @@ A recipe finder that uses a foods API to generate the different meals based on a
 
 ## Steps Completed:
 
-- Set up all files and boilerplates. 
+- Set up all files and boilerplates.
 

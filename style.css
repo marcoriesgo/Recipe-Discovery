@@ -1,3 +1,37 @@
 body {
-    background: blue;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#instructions {
+    margin-top: 30px;
+}
+
+#fooditems {
+    border: 2px solid green;
+    background:;
+    margin-top: 50px;
+    height: 300px;
+    display: inline-block;
+    width: 45%;
+    margin-right: 30px;
+    border-radius: 100px;
+}
+
+#userinput {
+    border: 2px solid blue;
+    margin-top: 50px;
+    height: 300px;
+    display: inline-block;
+    width: 45%;
+    margin-left: 30px;
+    border-radius: 100px;
+}
+
+#recipes {
+    border: 2px solid red;
+    margin-top: 50px;
+    height: 300px;
+    border-radius: 100px
 }
