@@ -2,6 +2,8 @@ $(()=>{
     console.log("linked")
     
 
+    
+
     $.ajax({
         url: "https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian",
         type: "GET",
@@ -13,4 +15,4 @@ $(()=>{
       console.log(data);
     });
     
-    })
+  })

@@ -21,6 +21,7 @@ body {
     float: left;
     max-width: 429px;
     min-width: 330px;
+    border: 0.5px solid grey;
 }
 
 #fooditemscontainer {
@@ -40,6 +41,7 @@ body {
     border: 2px solid black;
     border-radius: 20px;
     background: rgb(232, 232, 232);
+    box-shadow: 4px 4px 3px rgb(191, 191, 191);
     
 }
 
@@ -55,6 +57,7 @@ body {
     float: left;
     max-width: 429px;
     min-width: 330px;
+    border: 0.5px solid grey;
 }
 
 #recipes {
@@ -67,12 +70,14 @@ body {
     margin-bottom: 50px;
     max-width: 925px;
     min-width: 711px;
+    border: 0.5px solid grey;
+
 }
 
 
 .recipeitem {
     display: inline-block;
-    border: 2px solid hotpink;
+    border: 2px solid red;
     height: 72%;
     width: 27%;
     margin: 10px;
