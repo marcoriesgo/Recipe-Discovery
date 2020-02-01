@@ -19,6 +19,8 @@ body {
     margin-right: 30px;
     border-radius: 100px;
     float: left;
+    max-width: 429px;
+    min-width: 330px;
 }
 
 #fooditemscontainer {
@@ -37,6 +39,7 @@ body {
     margin: 10px 15px 10px 15px;
     border: 2px solid black;
     border-radius: 20px;
+    background: rgb(232, 232, 232);
     
 }
 
@@ -50,6 +53,8 @@ body {
     margin-left: 30px;
     border-radius: 100px;
     float: left;
+    max-width: 429px;
+    min-width: 330px;
 }
 
 #recipes {
@@ -60,6 +65,8 @@ body {
     float: left;
     width: 97%;
     margin-bottom: 50px;
+    max-width: 925px;
+    min-width: 711px;
 }
 
 
