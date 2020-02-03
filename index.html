@@ -16,20 +16,21 @@
     <h4 id="instructions">To get started, drag and drop a food category into the drop section to generate recipes.</h4>
     <h4>Then, click on the link to your favorite one and get cooking!</h4>
 
-    <section id="fooditems">
-        <h3 class="containertitle">Food Types</h3>
-        <div id="fooditemscontainer">
-            <div class="fooditem">Beef</div>
-            <div class="fooditem">Seafood</div>
-            <div class="fooditem">Chicken</div>
-            <div class="fooditem">Vegetarian</div>
-            <div class="fooditem">Pasta</div>
-            <div class="fooditem">Pork</div>
+    <section id="topHalf">
+        <section id="fooditems">
+            <h3 class="containertitle">Food Types</h3>
+            <div id="fooditemscontainer">
+                <div class="fooditem" id="beefdrag" draggable="true" ondragstart="drag(event)">Beef</div>
+                <div class="fooditem" id="seafooddrag" draggable="true" ondragstart="drag(event)">Seafood</div>
+                <div class="fooditem" id="chickendrag" draggable="true" ondragstart="drag(event)">Chicken</div>
+                <div class="fooditem" id="vegetariandrag" draggable="true" ondragstart="drag(event)">Vegetarian</div>
+                <div class="fooditem" id="pastadrag" draggable="true" ondragstart="drag(event)">Pasta</div>
+                <div class="fooditem" id="porkdrag" draggable="true" ondragstart="drag(event)">Pork</div>
+            </div>
+        </section>
+        <div id="userinput" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h3>Drop Item Here</h3>
         </div>
-    </section>
-
-    <section id="userinput">
-        <h3>Drop Item Here</h3>
     </section>
 
     <section id="recipes">
