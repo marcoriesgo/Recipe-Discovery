@@ -1,4 +1,4 @@
-# Project 1 - What's For Dinner?
+# Project 1 - Find My Dinner
 
 https://git.generalassemb.ly/ira/SEIR-FLEX-123/tree/master/projects/project_1
 
