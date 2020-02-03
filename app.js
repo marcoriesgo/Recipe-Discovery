@@ -1,3 +1,4 @@
+//Drag and Drop functionality:
 function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -12,6 +13,8 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
+
+
 $(()=>{
     console.log("linked")
     
@@ -19,7 +22,7 @@ $(()=>{
 
 
     $.ajax({
-        url: "https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian",
+        url: "https://api.edamam.com/search?q=steak&app_id=cd8e8580&app_key=f8d1fa2b821a6224e531e36c5b111182",
         type: "GET",
         data: {
           "$limit" : 3
