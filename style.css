@@ -1,10 +1,14 @@
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: #c9f2e9;
+    background: beige;
     max-width: 800px;
     margin: 2% 30%;
     text-align: center;
+}
+
+.intro {
+    font-weight: 600;
 }
 
 .instructions {
@@ -32,7 +36,7 @@ button {
 
 
 .peopleInputBox {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 p {
