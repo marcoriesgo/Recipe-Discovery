@@ -29,7 +29,7 @@ button {
     font-size: 18px;
     background: white;
     border: black;
-    box-shadow: 2px 2px 2px rgb(187, 187, 187);
+    box-shadow: 2px 2px 2px rgb(210, 210, 210);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -37,12 +37,13 @@ button {
 .food {
     width: 200px;
     margin: 20px 10px 20px 10px;
+    background: rgb(247, 247, 247);
     
 
 }
 
 #secondInstruction {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 h3 {
@@ -66,6 +67,19 @@ select {
     height: 30px;
     font-size: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.recipe h2 {
+    font-weight: 500;
+}
+
+#recipeName {
+    margin-top: 30px;
+}
+
+.recipeImage {
+    border-radius: 20px;
+    width: 350px;
 }
 
 .footer {
