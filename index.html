@@ -14,19 +14,11 @@
         <h2>We know how stressful finding what to cook for dinner can be!</h2>
         <div class="instructions">
             <p class="intro">Find My Dinner has found a simple solution to your problem.</p>
-            <p class="intro">Simply follow the instructions below and cook the recipe.</p>
+            <p class="intro">Simply select the type of food you would like to eat from the dropdown.</p>
             <p class="intro">That's how easy it is!</p>
         </div>
         <section class="recipeSection">
             <form>
-                <div class="peopleInputBox">
-                    <p class="dinersBoxDescription">How many people are having dinner?</p>
-                    <input id="calories" type="text" placeholder="People">
-                </div>
-                <div class="calorieInputBox">
-                    <p class="calorieBoxDescription">What is the maximum calories you want per person?</p>
-                    <input id="calories" type="text" placeholder="Calories">
-                </div>
                 <p class="typeOfDinner">What type of food would you like to eat?</p>
                 <select id="mealTypes">
                     <option value="Steak">Steak</option>
@@ -40,7 +32,10 @@
                     <button id="search" type="submit">Search For A Recipe!</button>
                 </div>
             </form>
-            <div id="recipe"></div>
+            <div id="recipe">
+                <img id="recipeImage" src="" />
+                <table id="recipeTable"></table>
+            </div>
         </section>
         <div class="footer">
             <img src="images/badge.jpeg" alt="Edamam Attribution">
