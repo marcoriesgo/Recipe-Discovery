@@ -16,25 +16,24 @@
             <p>So Find My Dinner has found an easy solution to your dinner problem.</p>
             <p>Simply follow the instructions below and get cooking! That's how easy it is.</p>
         </div>
+        <h3>You can search for a recipe based on calorie range:</h3>
         <section class="recipeSection">
             <form>
                 <div class="calorieInputBox">
-                    <p class="calorieBoxDescription">What is the maximum calories you want per person?</p>
-                    <input id="calories" type="text" placeholder="Calories">
+                    <p class="calorieBoxDescription">What is the calorie range you want per person?</p>
+                    <input id="calories" type="text" placeholder="e.g. 400-700">
                 </div>
-                <p class="typeOfDinner">What type of food would you like to eat?</p>
-                <select id="mealTypes">
-                    <option value="Steak">Steak</option>
-                    <option value="Chicken">Chicken</option>
-                    <option value="Vegetables">Vegetables</option>
-                    <option value="Seafood">Seafood</option>
-                    <option value="Pasta">Pasta</option>
-                    <option value="Pizza">Pizza</option>
-                </select>
                 <div class="recipeSearchButton">                   
                     <button id="search" type="submit">Search For A Recipe!</button>
                 </div>
             </form>
+            <h3 id="secondInstruction">Or search for a recipe by the type of food you want to eat:</h3>
+                <button class="food" type="submit">Steak</button>
+                <button class="food" type="submit">Chicken</button>
+                <button class="food" type="submit">Vegetables</button>
+                <button class="food" type="submit">Seafood</button>
+                <button class="food" type="submit">Pasta</button>
+                <button class="food" type="submit">Pizza</button>
             <div id="recipe"></div>
         </section>
         <div class="footer">

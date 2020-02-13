@@ -34,8 +34,18 @@ button {
 
 }
 
+.food {
+    width: 200px;
+    margin: 20px 10px 20px 10px;
+    
 
-.calorieInputBox {
+}
+
+#secondInstruction {
+    margin-top: 20px;
+}
+
+h3 {
     margin-top: 40px;
 }
 
@@ -56,4 +66,8 @@ select {
     height: 30px;
     font-size: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer {
+    margin-top: 80px;
 }
