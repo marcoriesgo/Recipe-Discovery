@@ -15,9 +15,11 @@ $(()=>{
     let $recipeIntroduction =  $("<h1>").text("Bon Appétit")
     $(".recipe").append($recipeIntroduction);
 
-    let loadedRecipe = data.hits[0].recipe;
+    let integer = (Math.floor(Math.random() * data.hits.length));
 
-    let calories = Math.floor(data.hits[0].recipe.calories)
+    let loadedRecipe = data.hits[integer].recipe;
+
+    let calories = Math.floor(loadedRecipe.calories);
 
     let recipeLink = loadedRecipe.url;
     
@@ -27,7 +29,7 @@ $(()=>{
     let $recipePicture = $(`<img src="${loadedRecipe.image}" class="recipeImage"/>`)
     $(".recipe").append($recipePicture);
 
-    let $recipeCalories = $("<h2>").text("Calories").attr("id", "recipeCalories")
+    let $recipeCalories = $("<h2>").text("Total Calories").attr("id", "recipeCalories")
     $(".recipe").append($recipeCalories);
 
     let $recipeCaloriesValue = $("<p>").text(calories).attr("id", "recipeCaloriesValue")
@@ -51,7 +53,14 @@ $(()=>{
     let $recipeLinkValue = $(`<a href="${recipeLink}">${loadedRecipe.label}</a>`).attr("id", "recipeLinkValue")
     $(".recipe").append($recipeLinkValue);
 
+    let $notHappyQuestion = $("<h3>").text("Not happy with the recipe you got?").attr("id", "searchAgainPrompt")
+    $(".recipe").append($notHappyQuestion);
+
+    let $generateAgainButton = $("<button>").attr("class", "regenerateButton").attr("type", "submit").text("Find a random recipe. Just for fun!")
+    $(".recipe").append($generateAgainButton);
+
   }
+
 
 // Build ajax call for the calories box recipes
   $("form").on("submit", () => {
@@ -76,6 +85,17 @@ $(()=>{
       }
     );
   });
+
+//Build ajax call for button where the user does not like their current recipe:
+$(document).on("click", ".regenerateButton", () => {
+  event.preventDefault(); 
+  $.ajax({url: "https://api.edamam.com/search?q=random&app_id=cd8e8580&app_key=f8d1fa2b821a6224e531e36c5b111182"}).then(
+    data => {
+      console.log(data);
+      showRecipe(data);
+    }
+  );
+});
   
 
 })
