@@ -70,7 +70,8 @@ select {
 }
 
 .recipe h2 {
-    font-weight: 500;
+    font-weight: 550;
+    text-decoration: underline;
 }
 
 #recipeName {
@@ -78,7 +79,7 @@ select {
 }
 
 .recipeImage {
-    border-radius: 20px;
+    border-radius: 30px;
     width: 350px;
 }
 
