@@ -1,4 +1,21 @@
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: beige;
@@ -31,13 +48,23 @@ button {
     border: black;
     box-shadow: 2px 2px 2px rgb(210, 210, 210);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition-duration: 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+button:hover {
+    background-color: rgb(215, 215, 215);
 
 }
 
 .food {
     width: 200px;
-    margin: 20px 10px 20px 10px;
-    background: rgb(247, 247, 247);
+    
     
 
 }
@@ -61,6 +88,8 @@ input {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 5px;
 }
+
+
 
 select {
     width: 140px;
