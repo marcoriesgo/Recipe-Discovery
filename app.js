@@ -12,7 +12,7 @@ $(()=>{
   const showRecipe = data => {
     deletePreviousContent();
 
-    let $recipeIntroduction =  $("<h1>").text("Bon Appétit")
+    let $recipeIntroduction =  $("<h1>").text("Bon Appétit").attr("id", "recipeIntro")
     $(".recipe").append($recipeIntroduction);
 
     let integer = (Math.floor(Math.random() * data.hits.length));
@@ -29,7 +29,7 @@ $(()=>{
     let $recipePicture = $(`<img src="${loadedRecipe.image}" class="recipeImage"/>`)
     $(".recipe").append($recipePicture);
 
-    let $recipeCalories = $("<h2>").text("Total Calories").attr("id", "recipeCalories")
+    let $recipeCalories = $("<h2>").text("Total Recipe Calories").attr("id", "recipeCalories")
     $(".recipe").append($recipeCalories);
 
     let $recipeCaloriesValue = $("<p>").text(calories).attr("id", "recipeCaloriesValue")
@@ -50,14 +50,16 @@ $(()=>{
     let $recipeLink = $("<h2>").text("Recipe Link").attr("id", "recipeLink")
     $(".recipe").append($recipeLink);
 
-    let $recipeLinkValue = $(`<a href="${recipeLink}">${loadedRecipe.label}</a>`).attr("id", "recipeLinkValue")
+    let $recipeLinkValue = $(`<a href="${recipeLink}">${loadedRecipe.label}</a>`).attr("id", "recipeLinkValue").css("color", "#44c0d8")
     $(".recipe").append($recipeLinkValue);
 
     let $notHappyQuestion = $("<h3>").text("Not happy with the recipe you got?").attr("id", "searchAgainPrompt")
     $(".recipe").append($notHappyQuestion);
 
-    let $generateAgainButton = $("<button>").attr("class", "regenerateButton").attr("type", "submit").text("Find a random recipe. Just for fun!")
+    let $generateAgainButton = $("<button>").attr("class", "regenerateButton").attr("type", "submit").text("Find a Random Recipe")
     $(".recipe").append($generateAgainButton);
+
+    $(".recipe").css("background-color", "black")
 
   }
 
