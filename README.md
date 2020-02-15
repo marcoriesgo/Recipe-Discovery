@@ -6,7 +6,7 @@ https://docs.google.com/spreadsheets/d/1fS22w516hrhnCq4oJuuUdUQXpVWzxLps8brO4I0u
 
 ## Project Concept:
 
-A recipe finder that uses a foods API to generate the different meals based on a user's input of what they want to eat.
+A recipe finder that uses a Edamam API to generate different meals based on a user's input of what they want to eat or their desired calorie intake.
 
 ## Page Structure:
 
@@ -14,11 +14,21 @@ A recipe finder that uses a foods API to generate the different meals based on a
 
 * Page introduction
 
+* Types of Food Buttons
+
+* Calorie selector input field
+
+* Recipe section with a picture of the recipe plus data about it
+
+* Button to geenerate new recipe if the user is not happy with the current one
+
+* Footer with Edamam API Thanks
+
 ### User Input: 
 
-* Drag and drop items to select the type of food user wants.
+* Buttons with different food types for the user to decide what type of food to enerate recipes of.
 
-* Drop area to drag the type of food item.
+* Input form of the calories to be consumed.
 
 ### Div:
 
@@ -38,13 +48,19 @@ A recipe finder that uses a foods API to generate the different meals based on a
 
 ## MVP:
 
-* User can drag and drop food types.
+* User can click on a food type.
 
-* User can see three different recipes based on their search.
+* User can see a recipe based on their search.
 
 * Each recipe displays a picture of the recipe.
 
-* Each rcipe displayed gives users a link to the recipe. 
+* Each rcipe displayed gives users a link.
+
+* Website is built using HTML, CSS, Javascript, and Jquery.
+
+* Website uses an API.
+
+* Website makes an ajax call in order to retrieve data and display it to the user.
 
 ## More Potential Functionality:
 
@@ -55,4 +71,18 @@ A recipe finder that uses a foods API to generate the different meals based on a
 ## Steps Completed:
 
 - Set up all files and boilerplates.
+
+- Set up HTML
+
+- CSS is completed
+
+- Javascript is setup
+
+- 3 ajax calls are complete
+
+- Variables setup
+
+- Jquery Complete
+
+- MVP Completed
 

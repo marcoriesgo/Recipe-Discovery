@@ -63,7 +63,6 @@ $(()=>{
 
   }
 
-
 // Build ajax call for the calories box recipes
   $("form").on("submit", () => {
     event.preventDefault();
@@ -75,7 +74,6 @@ $(()=>{
       }
     );
   });
-
 
 //Build ajax call for the food types buttons
   $(".food").on("click", () => {
@@ -99,5 +97,4 @@ $(document).on("click", ".regenerateButton", () => {
   );
 });
   
-
 })
